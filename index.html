@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Web Kasir | Shofie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/ti-icons/css/themify-icons.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d2d78fd0f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/faces/sopi.jpg" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <nav
+        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start"
+        >
+          <a class="navbar-brand brand-logo" href="index.html"
+            ><h2 class="fw-bold text-primary">PT. Shofie Jaya</h2></a
+          >
+          <a class="navbar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/logo-mini.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button
+            class="navbar-toggler navbar-toggler align-self-center"
+            type="button"
+            data-toggle="minimize"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="profileDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="nav-profile-img">
+                  <img src="assets/images/faces/sopi.jpg" alt="image" />
+                  <span class="availability-status online"></span>
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">R.A Shofia Tasmin Maulidia</p>
+                </div>
+              </a>
+              <div
+                class="dropdown-menu navbar-dropdown"
+                aria-labelledby="profileDropdown"
+              >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-logout me-2 text-primary"></i> Signout
+                </a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator dropdown-toggle"
+                id="messageDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count-symbol bg-warning"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list"
+                aria-labelledby="messageDropdown"
+              >
+                <h6 class="p-3 mb-0">Messages</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="assets/images/faces/face4.jpg"
+                      alt="image"
+                      class="profile-pic"
+                    />
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6
+                      class="preview-subject ellipsis mb-1 font-weight-normal"
+                    >
+                      Mark send you a message
+                    </h6>
+                    <p class="text-gray mb-0">1 Minutes ago</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="assets/images/faces/face2.jpg"
+                      alt="image"
+                      class="profile-pic"
+                    />
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6
+                      class="preview-subject ellipsis mb-1 font-weight-normal"
+                    >
+                      Cregh send you a message
+                    </h6>
+                    <p class="text-gray mb-0">15 Minutes ago</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="assets/images/faces/face3.jpg"
+                      alt="image"
+                      class="profile-pic"
+                    />
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6
+                      class="preview-subject ellipsis mb-1 font-weight-normal"
+                    >
+                      Profile picture updated
+                    </h6>
+                    <p class="text-gray mb-0">18 Minutes ago</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator dropdown-toggle"
+                id="notificationDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list"
+                aria-labelledby="notificationDropdown"
+              >
+                <h6 class="p-3 mb-0">Notifications</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6 class="preview-subject font-weight-normal mb-1">
+                      Event today
+                    </h6>
+                    <p class="text-gray ellipsis mb-0">
+                      Baru saja menginputkan barang
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+              </div>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="assets/images/faces/sopi.jpg" alt="profile" />
+                  <span class="login-status online"></span>
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">R.A Shofia Tasmin M</span>
+                  <span class="text-secondary text-small">UI/UX Designer</span>
+                </div>
+                <i
+                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                ></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                >
+                  <i class="mdi mdi-home"></i>
+                </span>
+                Dashboard
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview
+                    <i
+                      class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"
+                    ></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img
+                      src="assets/images/dashboard/circle.svg"
+                      class="card-img-absolute"
+                      alt="circle-image"
+                    />
+                    <h4 class="font-weight-normal mb-3">
+                      Pendapatan Hari Ini
+                      <i class="mdi mdi-cash-multiple mdi-24px float-right"></i>
+                    </h4>
+                    <h2 class="mb-5" id="total-pendapatan">Rp. 0</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-info card-img-holder text-white">
+                  <div class="card-body">
+                    <img
+                      src="assets/images/dashboard/circle.svg"
+                      class="card-img-absolute"
+                      alt="circle-image"
+                    />
+                    <h4 class="font-weight-normal mb-3">
+                      Barang Terjual
+                      <i class="mdi mdi-cart mdi-24px float-right"></i>
+                    </h4>
+                    <h2 class="mb-5" id="total-terjual">0</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div
+                  class="card bg-gradient-success card-img-holder text-white"
+                >
+                  <div class="card-body">
+                    <img
+                      src="assets/images/dashboard/circle.svg"
+                      class="card-img-absolute"
+                      alt="circle-image"
+                    />
+                    <h4 class="font-weight-normal mb-3">
+                      Jumlah Transaksi
+                      <i class="mdi mdi-receipt mdi-24px float-right"></i>
+                    </h4>
+                    <h2 class="mb-5" id="total-transaksi">0</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Transaksi Barang</h4>
+                    <div class="form-group">
+                      <label for="barang">Nama Barang</label>
+                      <select
+                        id="barang"
+                        class="form-control form-control-lg"
+                        onchange="updateHargaSatuan()"
+                      >
+                        <option value="">Pilih Barang</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="harga-satuan">Harga Satuan</label>
+                      <input
+                        type="text"
+                        id="harga-satuan"
+                        class="form-control"
+                        readonly
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="jumlah">Jumlah</label>
+                      <input
+                        type="number"
+                        id="jumlah"
+                        class="form-control"
+                        oninput="updateTotalHarga()"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="total-harga">Total Harga</label>
+                      <input
+                        type="text"
+                        id="total-harga"
+                        class="form-control"
+                        readonly
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="bayar">Bayar</label>
+                      <input
+                        type="number"
+                        id="bayar"
+                        class="form-control"
+                        oninput="hitungKembalian()"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="kembalian">Kembalian</label>
+                      <input
+                        type="text"
+                        id="kembalian"
+                        class="form-control"
+                        readonly
+                      />
+                      <small
+                        id="pesan-kurang"
+                        class="text-danger"
+                        style="display: none"
+                        >Uang tidak cukup</small
+                      >
+                    </div>
+                    <button
+                      class="btn btn-primary"
+                      onclick="selesaikanTransaksi()"
+                    >
+                      Selesaikan Transaksi
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">History Transaksi</h4>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Nama Barang</th>
+                            <th>Jumlah</th>
+                            <th>Total Harga</th>
+                            <th>Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody id="history-transaksi">
+                          <!-- Riwayat transaksi akan ditampilkan di sini -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="modalKonfirmasi"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="modalKonfirmasiLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalKonfirmasiLabel">
+                      Konfirmasi
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Apakah Anda yakin ingin menghapus transaksi ini?
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Batal
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="hapusTransaksi"
+                    >
+                      Hapus
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+                >Copyright © bootstrapdash.com 2021</span
+              >
+              <span
+                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+              >
+                Free
+                <a
+                  href="https://www.bootstrapdash.com/bootstrap-admin-template/"
+                  target="_blank"
+                  >Bootstrap admin template</a
+                >
+                from Bootstrapdash.com</span
+              >
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Konfirmasi -->
+    <div
+      class="modal fade"
+      id="modalKonfirmasi"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalKonfirmasiLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalKonfirmasiLabel">Konfirmasi</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Apakah Anda yakin ingin menghapus transaksi ini?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn btn-primary" id="hapusTransaksi">
+              Hapus
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const barangList = [
+        { nama: "Beras 10kg", harga: 100000 },
+        { nama: "Minyak", harga: 14000 },
+        { nama: "Shampoo", harga: 16000 },
+      ];
+
+      let transaksiList = [];
+
+      function populateBarangOptions() {
+        const barangSelect = document.getElementById("barang");
+        barangList.forEach((barang) => {
+          const option = document.createElement("option");
+          option.value = barang.nama;
+          option.textContent = barang.nama;
+          barangSelect.appendChild(option);
+        });
+      }
+
+      function updateHargaSatuan() {
+        const barangSelect = document.getElementById("barang");
+        const selectedBarang = barangList.find(
+          (barang) => barang.nama === barangSelect.value
+        );
+        const hargaSatuanInput = document.getElementById("harga-satuan");
+        hargaSatuanInput.value = selectedBarang ? selectedBarang.harga : "";
+        updateTotalHarga();
+      }
+
+      function updateTotalHarga() {
+        const hargaSatuanInput = document.getElementById("harga-satuan");
+        const jumlahInput = document.getElementById("jumlah");
+        const totalHargaInput = document.getElementById("total-harga");
+
+        const hargaSatuan = parseInt(hargaSatuanInput.value) || 0;
+        const jumlah = parseInt(jumlahInput.value) || 0;
+        const totalHarga = hargaSatuan * jumlah;
+        totalHargaInput.value = totalHarga;
+      }
+
+      function hitungKembalian() {
+        const totalHargaInput = document.getElementById("total-harga");
+        const bayarInput = document.getElementById("bayar");
+        const kembalianInput = document.getElementById("kembalian");
+        const pesanKurang = document.getElementById("pesan-kurang");
+
+        const totalHarga = parseInt(totalHargaInput.value) || 0;
+        const bayar = parseInt(bayarInput.value) || 0;
+        const kembalian = bayar - totalHarga;
+
+        if (kembalian < 0) {
+          pesanKurang.style.display = "inline";
+          kembalianInput.value = "";
+        } else {
+          pesanKurang.style.display = "none";
+          kembalianInput.value = kembalian;
+        }
+      }
+
+      function selesaikanTransaksi() {
+        const barangSelect = document.getElementById("barang");
+        const jumlahInput = document.getElementById("jumlah");
+        const totalHargaInput = document.getElementById("total-harga");
+        const bayarInput = document.getElementById("bayar");
+        const kembalianInput = document.getElementById("kembalian");
+
+        const namaBarang = barangSelect.value;
+        const jumlah = parseInt(jumlahInput.value) || 0;
+        const totalHarga = parseInt(totalHargaInput.value) || 0;
+
+        if (namaBarang && jumlah > 0 && totalHarga > 0) {
+          const transaksi = { namaBarang, jumlah, totalHarga };
+          transaksiList.push(transaksi);
+          updateHistory();
+          updateDashboard();
+          resetForm();
+        } else {
+          alert("Mohon lengkapi data transaksi.");
+        }
+      }
+
+      function updateHistory() {
+        const historyTable = document.getElementById("history-transaksi");
+        historyTable.innerHTML = "";
+        transaksiList.forEach((transaksi, index) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${transaksi.namaBarang}</td>
+                <td>${transaksi.jumlah}</td>
+                <td>Rp. ${transaksi.totalHarga}</td>
+                <td><button class="btn btn-danger btn-sm" onclick="showModalKonfirmasi(${index})">Hapus</button></td>
+            `;
+          historyTable.appendChild(row);
+        });
+      }
+
+      function updateDashboard() {
+        const totalPendapatan = transaksiList.reduce(
+          (total, transaksi) => total + transaksi.totalHarga,
+          0
+        );
+        const totalTerjual = transaksiList.reduce(
+          (total, transaksi) => total + transaksi.jumlah,
+          0
+        );
+        const totalTransaksi = transaksiList.length;
+
+        document.getElementById(
+          "total-pendapatan"
+        ).textContent = `Rp. ${totalPendapatan}`;
+        document.getElementById("total-terjual").textContent = totalTerjual;
+        document.getElementById("total-transaksi").textContent = totalTransaksi;
+      }
+
+      function resetForm() {
+        document.getElementById("barang").value = "";
+        document.getElementById("harga-satuan").value = "";
+        document.getElementById("jumlah").value = "";
+        document.getElementById("total-harga").value = "";
+        document.getElementById("bayar").value = "";
+        document.getElementById("kembalian").value = "";
+      }
+
+      function showModalKonfirmasi(index) {
+        const modalKonfirmasi = new bootstrap.Modal(
+          document.getElementById("modalKonfirmasi")
+        );
+        modalKonfirmasi.show();
+        document.getElementById("hapusTransaksi").onclick = () => {
+          hapusTransaksi(index);
+          modalKonfirmasi.hide();
+        };
+      }
+
+      function hapusTransaksi(index) {
+        transaksiList.splice(index, 1);
+        updateHistory();
+        updateDashboard();
+      }
+
+      window.onload = () => {
+        populateBarangOptions();
+      };
+    </script>
+  </body>
+</html>
